@@ -19,7 +19,7 @@ import tensorflow as tf
 ## Application Setup
 ##########################################################################
 
-model = tf.keras.models.load_model('./best_model.h5')
+model = tf.keras.models.load_model('best_model.h5')
 
 class_names = ["T-shirt/top",
             "Trouser",
