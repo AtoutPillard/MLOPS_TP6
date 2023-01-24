@@ -14,7 +14,7 @@ pipeline {
         stage('Deploying'){
             steps{
                 bat 'docker build -t shinbi/mlops_tp6:latest .'
-                bat 'docker run -d -p 8000:8000 shinbi/mlops_tp6:latest'
+                bat 'docker run -d -p 5000:5000 shinbi/mlops_tp6:latest'
             }
         }
     }
