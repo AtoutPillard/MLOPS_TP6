@@ -16,7 +16,7 @@ class FlaskTestCase(unittest.TestCase):
         response = self.app.post("/api/classify", data={'query': datas})
         print(response.json())
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json(), {"prediction": "Shirt"})
+        self.assertEqual(response, {"prediction": "Shirt"})
 
 if __name__ == '__main__':
     unittest.main()
