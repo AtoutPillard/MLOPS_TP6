@@ -1,5 +1,6 @@
 import unittest
 from app import app
+from flask.json import jsonify
 
 class FlaskTestCase(unittest.TestCase):
 
